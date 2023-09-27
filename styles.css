@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+
+}
+
+.page {
+    display: flex;
+
+}
+
+.mountain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mountain .montblanc {
+    height: 100vh;
+    width: 40vw;
+    position: relative;
+}
+
+.snowboard {
+    height: 30vh;
+    width: 20vw;
+    
+}
+
+.mountain .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2%;
+    left: 9%;
+}
+
+.logoText {
+    text-align: center;
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+    font-size: 2rem;
+    color: black;
+    margin-top: 0;
+
+}
+
+.signUp {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    background-color: #E6E6FA
+
+
+
+}
+
+.description {
+    padding: 7%;
+    
+}
+
+p {
+    font-weight: 200;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(2, 30%);
+    gap: 20%;
+    
+}
+
+
