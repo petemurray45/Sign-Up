@@ -1,7 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    min-height: 100%;
+    min-width: none;
     font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+   
 
 }
 
@@ -17,14 +28,14 @@ body {
 }
 
 .mountain .montblanc {
-    height: 100vh;
+    height: 100%;
     width: 40vw;
     position: relative;
 }
 
 .snowboard {
-    height: 30vh;
-    width: 20vw;
+    height: 15vh;
+    width: 10vw;
     
 }
 
@@ -35,13 +46,13 @@ body {
     align-items: center;
     position: absolute;
     top: 2%;
-    left: 9%;
+    left: 13%;
 }
 
 .logoText {
     text-align: center;
     font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     margin-top: 0;
 
@@ -50,7 +61,7 @@ body {
 .signUp {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 60vw;
     background-color: #E6E6FA
 
@@ -59,28 +70,77 @@ body {
 }
 
 .description {
-    padding: 7%;
+    padding: 5%;
+    padding-left: 7%;
     
 }
 
-p {
-    font-weight: 200;
-}
-
-
 .info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 7%;
+    margin-bottom: 8%;
 }
 
 .form {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 30%);
     grid-template-rows: repeat(2, 30%);
-    gap: 20%;
+    gap: 15%;
     
 }
+
+.submitBtn {
+    height: 28px;
+    width: 156px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: thin;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #C5FDF8;
+    cursor: pointer;
+}
+ 
+hr {
+    width: 60vw;
+    height: 0.1vh;
+}
+
+h1 {
+    font-family: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+
+}
+
+.logIn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    
+}
+
+.account {
+    font-size: 1rem;
+    margin-right: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue
+}
+
+input {
+    height: 24px;
+    width: 150px;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border-color: #eb5149;
+}
+
 
 
